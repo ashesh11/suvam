@@ -15,6 +15,11 @@ class Category(models.Model):
     def __str__(self):
         return self.title
 
+class Promotion(models.Model):
+    title= models.TextField(max_length=50)
+    def __str__(self):
+        return self.title
+
 class Product(models.Model):
     title = models.TextField(max_length=50)
     unit_price = models.FloatField()
@@ -22,6 +27,7 @@ class Product(models.Model):
     date_updated = models.DateTimeField(auto_now=True)
     image = models.ImageField(null=True, blank=True)
     category = models.ForeignKey(Category, on_delete=models.PROTECT, null=True)
+    promotion = models.ForeignKey(Promotion, on_delete=models.PROTECT, null=True)
     def __str__(self):
         return self.title
     
