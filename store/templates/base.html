@@ -17,31 +17,31 @@
   <link rel="stylesheet" href="{% static 'css/base.css' %}">
 </head>
 <body>
-  <div id="navbar-top-first">
-    <div class="row">
-      <div class="col-lg-8" id="navbar-top-first-left">
-        <i><h1>We are open Sunday to Friday (10 AM - 5 PM)</h1></i>
-      </div>
-      <div class="col-lg-4" id="navbar-top-first-right">
-        <h1>&#9742; 9857033457 &nbsp;&nbsp; &#128231; ashesh.bh@gmail.com</h1>
-        <h1>Milanchowk, Butwal</h1>
-      </div>
-    </div>
-  </div>
-  <div id="navbar-top-second" style="background-color:white; border-bottom:20px, solid, black;">
-    <div class="row">
-      <div class="col-lg-8">
-        <div id="navbar-top-second-left">
-          <a class="active" href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}" alt=""></a>
-          <a href="{% url 'store' %}">Store</a>
+  <div class="container">
+    <div id="navbar">
+      <div class="row" style="background-color: rgb(255, 255, 255);">
+        <div class="col-lg-4" id="navbar-left">
+            <a class="active" href="{% url 'home' %}"><img src="{% static 'images/suvam-cover.png' %}" alt="" style="width: 80%; float: left; padding-top: 30px;"></a>
+        </div>
+        <div class="col-lg-2" id="navbar-mid" style="padding-top: 60PX;">
+          <input type="search" name="" id="nav-search" placeholder="Search...">
+        </div>
+        <div class="col-lg-6" id="navbar-right" style="background-color: rgb(255, 255, 255); padding-top:15px;">
+          <div class="row1">
+            <a href="#" class="column">Register       |</a>
+            <a href="#" class="column">Login</a>
+          </div>
+          <div class="row2" style="padding-top: 20px;">
+            <a href="#" class="column">HOME</a>
+            <a href="#" class="column">CONTACT</a>
+            <a href="{% url 'store' %}" class="column">PRODUCTS</a>
+            <a href="#" class="column">PROMOTIONS</a>
+          </div>
         </div>
       </div>
-      <div class="col-lg-4" id="navbar-top-second-right" >
-        <input type="text" placeholder="Search Here . . .">
-      </div>
     </div>
   </div>
-
+  
   {% block content %}
   {% endblock content %}
 
