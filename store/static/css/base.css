@@ -2,6 +2,7 @@ body{
     background-color: rgb(252, 252, 252);
 }
 
+/* NAVBAR */
 .container{
     background-color: rgb(255, 255, 255);
     height: 110px;
@@ -12,6 +13,7 @@ body{
     background-color: rgb(255, 255, 255);
     text-align: right;
     color: aliceblue;
+    height: 110px;
 }
 
 #nav-search{
@@ -25,7 +27,7 @@ body{
     text-decoration-style:solid;
     font-weight:600;
     padding-left: 20px;
-    
+    width: 100%;
     
 }
 
@@ -36,77 +38,25 @@ body{
     font-weight: 400;
 }
 
-/* Homepage CSS */
-
 #border{
     background-color: rgb(17, 16, 78);
     height: 4px;
 }
 
-#cover{
-    width: 100%;
-}
-
-/* Category Table */
-
-#cat-container{
-    width: 95%;
-    background-color: rgb(255, 255, 255);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 35px;
-}
-
-#cat-container td{
-    width:80%
-}
-
-#cat-img{
-    background-color: rgb(207, 237, 245);
-    max-width: 100%;
-    max-height: 100%;
-    margin-bottom: 24px;
-
-}
-
-.img-with-text { 
-    color:black;
-    background-color: rgb(67, 189, 189);
-    margin: 15px;
-} 
-
-.img-with-text p{
-    height: 20px;
-    margin-left: 20px;
-    font-size: 20px;
-    line-height: 0%;
-}
-
-#what-we-do{
-    background-color:rgb(219, 223, 226);
-    text-align:center;
-    margin-top: 35px;
-    margin-bottom: 60px;
-    padding: 100px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    line-height: 25px;
-}
-
-#what-we-do h1{
-    margin-bottom: 40px;
-}
-
+/* FOOTER */
 #footer{
+    margin-right: 0px;
     color: white;
     background-color: black;
-    padding-left: 150px;
+    text-align: center;
+    margin-top: 10px;
 }
 
 #footer h4{
     font-size: 25px;
     line-height: 50px;
     font-weight: 600;
+    margin-top: auto;
 }
 
 #footer h5{
@@ -116,6 +66,6 @@ body{
 }
 
 #footer a{
-    text-decoration: none;
+    text-decoration: underline;
     color: rgb(209, 210, 240);
 }

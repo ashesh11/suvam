@@ -1,9 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block content %}
-    <div id="border">
-    </div>
-    
+{% block home %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
     <div id="homepage">
         <img src="media/suvam-cover.jpg" alt="" id="cover">
 
@@ -74,4 +72,4 @@
         </div>
 
     </div>
-{% endblock content %}
+{% endblock home %}
