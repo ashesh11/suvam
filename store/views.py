@@ -15,6 +15,5 @@ def contact(request):
 def promotions(request):
     return render(request, 'promotions.html')
 
-def store(request):
-    products= Product.objects.all()
-    return render(request, 'store.html', {'products': products})
+def products(request):
+    return render(request, 'products.html')

@@ -33,7 +33,7 @@
             <a href="{% url 'home' %}" class="column">HOME</a>
             <a href="{% url 'contact' %}" class="column">CONTACT US</a>
             <a href="{% url 'aboutus' %}" class="column">ABOUT US</a>
-            <a href="{% url 'store' %}" class="column">PRODUCTS</a>
+            <a href="{% url 'products' %}" class="column">PRODUCTS</a>
             <a href="{% url 'promotions' %}" class="column">PROMOTIONS</a>
           </div>
         </div>
@@ -43,11 +43,11 @@
   <div id="border">
   </div>
 
-  {% block store %}
-  {% endblock store %}
+  {% block products %}
+  {% endblock %}
 
   {% block home %}
-  {% endblock home %}
+  {% endblock %}
 
   {% block contact %}
   {% endblock %}
