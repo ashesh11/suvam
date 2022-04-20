@@ -9,19 +9,24 @@
         </div>
         <table class="table table-striped" id="products-table">
             <tr>
-                <th>Thumbnail</th>
-                <th>Name</th>
-                <th>Code</th>
-                <th>Description</th>
-                <th>Unit Price</th>
+                <th style="width: 5%; background-color: rgb(205, 201, 201); color: white; padding-right: 15px; padding-left: 15px;">S.N.</th>
+                <th style="width: 12%;">Thumbnail</th>
+                <th style="width: 26%;">Name</th>
+                <th style="width: 16%;">Code</th>
+                <th style="width: 32%;">Description</th>
+                <th style="width: 19%;" >Unit Price</th>
             </tr>
-            <tr>
-                <td style="width: 13%;"><img src="media/beaker.jpg" alt="" style="height: 70px; width:auto;"></td>
-                <td style="width: 27%;">Beaker</td>
-                <td style="width: 17%;">CHE115</td>
-                <td style="width: 33%;">Borosil 500ml</td>
-                <td style="width: 20%;">Rs.500</td>
-            </tr>
+
+            {% for product in products %}
+                <tr">
+                    <td style="background-color: rgb(164, 190, 190);"></td>
+                    <td style="background-color: rgb(127, 163, 163);"><img src="{% static 'product.image' %}" alt=""></td>
+                    <td style="background-color: rgb(131, 177, 177);">{{ product.title }}</td>
+                    <td style="background-color: rgb(152, 197, 197);">{{ product.code }}</td>
+                    <td style="background-color: rgb(124, 183, 183);">{{ product.description }}</td>
+                    <td style="background-color: rgb(124, 182, 182);">{{ product.unit_price }}</td>
+                </tr>
+            {% endfor %}
         </table>
     </div>
 {% endblock %}

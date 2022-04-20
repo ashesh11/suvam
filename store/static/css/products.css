@@ -1,3 +1,7 @@
+body{
+    counter-reset: Serial;
+}
+
 #products{
     width: 95%;
     margin-left: auto;
@@ -22,15 +26,22 @@
 }
 
 #products-table{
-    width: 80%;
+    width: 90%;
     margin: auto;
+    text-align: center;
 }
 
 #products-table th{
     text-align: center;
+    vertical-align: middle;
+}
+
+#products-table td:first-child::before{
+    counter-increment: Serial;
+    content: counter(Serial);
+    width: 5%;
 }
 
 #products-table td{
-    text-align: center;
-    vertical-align: middle;
+    
 }

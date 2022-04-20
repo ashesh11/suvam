@@ -19,7 +19,7 @@
     <div id="navbar">
       <div class="row" style="background-color: rgb(255, 255, 255);">
         <div class="col-lg-4" id="navbar-left">
-            <a class="active" href="{% url 'home' %}"><img src="{% static 'images/suvam-cover.png' %}" alt="" style="width: 80%; float: left; padding-top: 27px;"></a>
+            <a class="active" href="{% url 'home' %}"><img src="{% static 'images/suvam-cover.jpg' %}" alt="" style="width: 80%; float: left; padding-top: 27px;"></a>
         </div>
         <div class="col-lg-2" id="navbar-mid" style="padding-top: 57PX;">
           <input type="search" name="" id="nav-search" placeholder="Search...">
@@ -58,6 +58,8 @@
   {% block promotions %}
   {% endblock %}
 
+  {% block thanks %}
+  {% endblock %}
   <div id="footer">
     <div class="row">
       <div class="col-lg-4" id="categorys">
