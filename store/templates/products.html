@@ -9,22 +9,22 @@
         </div>
         <table class="table table-striped" id="products-table">
             <tr>
-                <th style="width: 5%; background-color: rgb(205, 201, 201); color: white; padding-right: 15px; padding-left: 15px;">S.N.</th>
+                <th style="width: 5%; background-color: rgb(218, 224, 224); color: rgb(34, 34, 34); padding-right: 15px; padding-left: 15px;">S.N.</th>
                 <th style="width: 12%;">Thumbnail</th>
-                <th style="width: 26%;">Name</th>
+                <th style="width: 26%; padding-left: 80px;">Name</th>
                 <th style="width: 16%;">Code</th>
                 <th style="width: 32%;">Description</th>
-                <th style="width: 19%;" >Unit Price</th>
+                <th style="width: 19%; inline-size: auto; padding-right: 50px;" >Unit&nbsp;Price</th>
             </tr>
 
             {% for product in products %}
                 <tr">
-                    <td style="background-color: rgb(164, 190, 190);"></td>
-                    <td style="background-color: rgb(127, 163, 163);"><img src="{% static 'product.image' %}" alt=""></td>
-                    <td style="background-color: rgb(131, 177, 177);">{{ product.title }}</td>
-                    <td style="background-color: rgb(152, 197, 197);">{{ product.code }}</td>
-                    <td style="background-color: rgb(124, 183, 183);">{{ product.description }}</td>
-                    <td style="background-color: rgb(124, 182, 182);">{{ product.unit_price }}</td>
+                    <td style="background-color: rgb(218, 224, 224); padding-left: 0%; text-align: center;"></td>
+                    <td><img src="{{ product.image.url }}" alt="" style="width: 100px; height: 100px;"></td>
+                    <td style="padding-left: 80px;">{{ product.title }}</td>
+                    <td>{{ product.code }}</td>
+                    <td>{{ product.description }}</td>
+                    <td style="text-align: center; padding-right: 50px;">{{ product.unit_price }}</td>
                 </tr>
             {% endfor %}
         </table>

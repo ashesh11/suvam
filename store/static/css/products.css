@@ -28,12 +28,12 @@ body{
 #products-table{
     width: 90%;
     margin: auto;
-    text-align: center;
 }
 
 #products-table th{
-    text-align: center;
+    text-align: left;
     vertical-align: middle;
+    padding-left: 40px;
 }
 
 #products-table td:first-child::before{
@@ -43,5 +43,6 @@ body{
 }
 
 #products-table td{
-    
+    padding-left: 40px;
+    vertical-align: middle;
 }
